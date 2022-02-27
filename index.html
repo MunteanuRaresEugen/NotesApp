@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note App</title>
     <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="introduction">Welcome to note app.Here you can keep your notes if you want to</div>
-    <div class="input-container">
-        <input type="text" class="input-box", placeholder="Enter text" />
-        <button class="click-button" onclick="addNoteClick()">Add Note</button>
-        <!-- <button class="click-button" onclick="addDateClick()">Add Date</button> -->
-    </div>
+    <header>
+        <div class="container">
+            <h1>Note App</h1>
+            <form action="">
+                <input type="text" id="note-title" placeholder="Note title">
+                <textarea name="" id="note-text" placeholder="Note details"></textarea>
+                
+                <button id="add-btn">Add Note</button>
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Your notes</h2>
+            <hr>
+            <div id="notes" class="notes">
+
+                <div id="note">
+                    <p class="note-counter">Note 1</p>
+                    <h3 class="note-title"></h3>
+                    <p class="note-text"></p>
+                    <button class="note-btn edit-btn">Edit Note</button>
+                    <button class="note-btn">Delete Note</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
