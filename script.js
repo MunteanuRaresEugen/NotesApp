@@ -39,7 +39,7 @@ const showNotes = () => {
     let day = dateObj.getUTCDate();
     let year = dateObj.getUTCFullYear();
     let html = "";
-    notesObj.forEach(function(elements, index) {
+    notesObj.forEach( (elements, index) => {
         html += `
         <div id="note">
         <p class="note-counter">Note ${index + 1}</p>
