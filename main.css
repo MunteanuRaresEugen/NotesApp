@@ -81,3 +81,11 @@ form button:hover {
 .edit-btn {
     background-color: purple;
 }
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
